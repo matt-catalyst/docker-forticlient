@@ -15,6 +15,11 @@ expect -exact "Would you like to connect to this server? (Y/N)" {
   send -- "Y\n"
 }
 
+# In case of 2FA
+expect -exact "Choose a secondary factor from ('push1', 'sms1') or enter passcode:" {
+  send -- "$env(VPN2FA)\n"
+}
+
 # Expect tunnel to actually start
 expect {
   "STATUS::Tunnel running" {

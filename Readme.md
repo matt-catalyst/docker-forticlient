@@ -21,6 +21,7 @@ docker run -it --rm \
   -e VPNADDR=host:port \
   -e VPNUSER=me@domain \
   -e VPNPASS=secret \
+  -e VPN2FA=push1 \
   auchandirect/forticlient
 
 # Add route for you remote subnet (ex. 10.201.0.0/16)
@@ -48,6 +49,7 @@ docker run -it --rm \
   -e VPNADDR=host:port \
   -e VPNUSER=me@domain \
   -e VPNPASS=secret \
+  -e VPN2FA=push1 \
   auchandirect/forticlient
 
 # Add route for you remote subnet (ex. 10.201.0.0/16)
